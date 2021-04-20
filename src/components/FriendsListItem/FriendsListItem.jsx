@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import styles from './FriendsListItem.module.css';
+
 import defaultAvatar from './avatar.jpeg';
 
 
@@ -14,12 +16,14 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
 
 FriendListItem.defaultProps = {
   avatar: defaultAvatar,
+  isOnline: false
+
 };
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  isOnline: PropTypes.bool,
 };
 
 export default FriendListItem;

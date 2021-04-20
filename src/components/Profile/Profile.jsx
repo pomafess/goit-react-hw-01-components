@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from "./Profile.module.css"
+import styles from "./Profile.module.css";
+import defaultAvatar from "./avatar.jpeg"
+
 
 
 const Profile = ({ name, tag, location, avatar, stats }) => 
@@ -30,7 +32,9 @@ const Profile = ({ name, tag, location, avatar, stats }) =>
       </ul>
     </div>
   )
-
+Profile.defaultProps = {
+  avatar: defaultAvatar
+};
 
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
