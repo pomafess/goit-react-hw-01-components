@@ -1,0 +1,44 @@
+.transactionHistory {
+  margin: 0px auto;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+}
+.head {
+  background: #bcebdd;
+  color: white;
+  text-shadow: 0 1px 1px #2d2020;
+  padding: 10px 20px;
+}
+.head,
+.column {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+.head:first-child,
+.column:first-child {
+  text-align: left;
+}
+.head:first-child {
+  border-top-left-radius: 10px;
+}
+.head:last-child {
+  border-top-right-radius: 10px;
+  border-right: none;
+}
+.column {
+  padding: 10px 20px;
+  background: #f8e391;
+}
+.row:last-child .column:first-child {
+  border-radius: 0 0 0 10px;
+}
+.row:last-child .column:last-child {
+  border-radius: 0 0 10px 0;
+}
+.row .column:last-child {
+  border-right: none;
+}
